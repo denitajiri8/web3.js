@@ -1,0 +1,18 @@
+import { Web3PluginBase, Contract } from "web3";
+
+class MyPlugin extends Web3PluginBase { 
+   public pluginNamespace = "myPlugin";
+
+   makeCall(){
+	    const contract = new Contract(abi)
+ 	    contract.methods.callingSomething().call()
+	    //…
+   }
+
+   sendTx(){
+	// ...
+	contract.methods.doSomething().send({from: “0x…”});
+   }
+}
+
+//… more methods!
