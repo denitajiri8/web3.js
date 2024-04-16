@@ -1,0 +1,8 @@
+import { Web3PluginBase } from "web3";
+
+
+class MyPlugin extends Web3PluginBase { 
+
+   public pluginNamespace = "myPlugin";
+
+}
